@@ -1,4 +1,6 @@
-FROM bitnami/minideb
+FROM nvidia/cuda:11.0-runtime-ubuntu20.04
+# 11.0-runtime-ubuntu20.04 (11.0/ubuntu20.04-x86_64/runtime/Dockerfile)
+# FROM bitnami/minideb
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
